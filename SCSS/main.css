@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main-container .navbar {
+  margin-top: 10rem;
+}
+.main-container .navbar h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #FBA834;
+}
+.main-container .input-box {
+  width: 1200px;
+  height: 450px;
+  padding: 16rem 8rem;
+  border: 1px solid #387ADF;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main-container .input-box label {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.main-container .input-box label .input-required {
+  color: red;
+}
+.main-container .input-box #input {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 2px solid green;
+}
+.main-container .input-box #input:user-invalid {
+  border: 2px solid crimson;
+}/*# sourceMappingURL=main.css.map */

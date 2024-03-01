@@ -1,0 +1,52 @@
+@import "mixin";
+@import "var";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+html{font-size: 62.5%;}
+
+// noppmv
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background: $bg-clr;
+    @include flexBox(center);
+    .navbar{
+        margin-top: 10rem;
+        h1{
+            font-size: 5rem;
+            font-weight: 500;
+            color: $color;
+        }
+    }
+    .input-box{
+        width: 1200px;
+        height: 450px;
+        padding: 16rem 8rem;
+        border: 1px solid $font-color;
+        @include flexBox(flex-start);
+        label{
+            font-size: 2rem;
+            cursor: pointer;
+            .input-required {
+                color: $requird-color;
+            }
+        }
+        #input {
+            width: 100%;
+            height: 5rem;
+            font-size: 1.5rem;
+            padding: 1rem;
+            border: 2px solid green;
+            &:user-invalid{
+                border: 2px solid crimson;
+            }
+        }
+    }
+}

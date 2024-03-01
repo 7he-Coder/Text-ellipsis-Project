@@ -1,0 +1,6 @@
+@mixin flexBox($param) {
+    display: flex;
+    align-items: $param;
+    justify-content: space-between;
+    flex-direction: column;
+}
